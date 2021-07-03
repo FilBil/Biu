@@ -5,30 +5,30 @@ export const QUESTIONS: Question[] = [
         id: 1,
         content: "3 + 3 * 3 = ?",
         answers: ["18", "0", "12", "2"],
-        correct: 2
-    },
-    {
-        id: 2,
-        content: "How much is the fish?",
-        answers: ["2137", "1488", "5", "1"],
         correct: 3
     },
     {
+        id: 2,
+        content: "co to jest macierz?",
+        answers: ["tablica", "pole", "liczba zmiennoprzecinkowa", "?"],
+        correct: 2
+    },
+    {
         id: 3,
-        content: "Ile nóg ma kot?",
-        answers: ["18", "0", "4", "5"],
-        correct: 1
+        content: "Podaj liczbe pierwszą",
+        answers: ["Pierwsza", "44", "2", "11"],
+        correct: 3
     },
     {
         id: 11,
-        content: "Całka z papaja to:",
-        answers: ["1", "9", "Szpinak", "Pomidor"],
+        content: "Wynik 2+2:",
+        answers: ["Za trudne", "Nie wiem", "Może 4", "Jednak 5"],
         correct: 2
     },
     {
         id: 12,
-        content: "Różniczka z papaja to:",
-        answers: ["1", "9", "Szpinak", "Pomidor"],
+        content: "Czego może być pochodna:",
+        answers: ["liczby", "całki", "macierzy", "funkcji"],
         correct: 3
     },
     {
@@ -39,77 +39,77 @@ export const QUESTIONS: Question[] = [
     },
     {
         id: 31,
-        content: "Jakie jest najlepsze nadzienie do pączka?",
-        answers: ["Jagoda", "Róża", "Miłość", "Pomidor"],
-        correct: 1
+        content: "Co odpowiada za szybką dawkę energii",
+        answers: ["błonnik", "białko", "tłuszcz", "cukier"],
+        correct: 3
     },
     {
         id: 32,
-        content: "Kiedy jest tłusty czwartek?",
-        answers: ["W środę", "9.08", "24.02", "Pomidor"],
+        content: "Czym mierzymy prawidłową wagę?",
+        answers: ["Poziomicą", "Miarka", "Waga", "BMI"],
         correct: 2
     },
     {
         id: 33,
-        content: "Całka z pączka to = ",
-        answers: ["1", "9", "Eklerek", "Pączek bez nadzienia"],
-        correct: 2
+        content: "Najbardziej dietetyczne danie",
+        answers: ["Pączek", "Chleb", "Eklerek", "Ryż"],
+        correct: 3
     },
     {
         id: 46,
-        content: "Ile płyt wydał zespół Calvaria",
-        answers: ["11", "12", "13", "1"],
+        content: "Czym jest kapitał",
+        answers: ["pieniędzmi", "budynkiem", "firmą", "jedzeniem"],
         correct: 3
     },
     {
         id: 47,
-        content: "Co grała Calvaria",
-        answers: ["DSBM", "Death Metal", "Techno", "To samo co Jamiroquai"],
+        content: "Czym jest ekonomia",
+        answers: ["Przedmiotem", "Wiedzą o gospodarce", "Wiedzą o rolnictwie", "Nie wiadomo"],
         correct: 1
     },
     {
         id: 48,
-        content: "Jaki instrument nie zagrał nigy w Calvarii>",
-        answers: ["Bass", "Wokal", "Puzon", "Gitara"],
-        correct: 2
+        content: "Po co nam ekonomia",
+        answers: ["Nie wiadomo", "By dowiedziec sie jak wszystko dziala w gospodarstwie", "Jest niepotrzebna", "Po coś na pewno"],
+        correct: 1
     },
     {
         id: 61,
-        content: "W którym roku Nergal nagrał Lasy Pomorza?",
-        answers: ["1996", "1999", "1987", "2001"],
+        content: "W którym roku była bitwa pod Grunwaldem?",
+        answers: ["1410", "1939", "1962", "997"],
         correct: 0
     },
     {
         id: 62,
-        content: "Brejse brejs star ...",
-        answers: ["numa numa jej", "ce ha wu em", "far far far", "Pomidor"],
+        content: "Zastał Polskę drewnianą zostawił murowaną. Kogo dotyczą słowa?",
+        answers: ["Kazimierz III", "Władysław IV", "Zygmunt Stary", "Zygmunt August"],
         correct: 0
     },
     {
         id: 63,
-        content: "Ile było muzyków w ich troje",
-        answers: ["3 +  3 * 3", "3", "4", "A co to?"],
+        content: "Jaki zakon rycerski miał własne państwo?",
+        answers: ["Templariuszy", "Santiago", "Krzyżacy", "Joannitów"],
         correct: 2
     },
     {
         id: 71,
-        content: "Gdyby C++ nazywał się C-- to:",
-        answers: ["Microsoft by się rozpadł", 
-        "Używano by Assemblera zamiast JSa", 
-        "Powstałyby komputery kwantowe",
-        "Pomidor"],
-        correct: 1
+        content: "C++ jest językiem:",
+        answers: ["migowym", 
+        "lingwistycznym", 
+        "skryptowym",
+        "programowania"],
+        correct: 4
     },
     {
         id: 72,
         content: "Co pokaże konsola: int i = 4; i++; std::cout << i;",
-        answers: ["i", "5", "Szpinak", "a jakiś main(){}? Może jaka libka?"],
-        correct: 3
+        answers: ["i", "5", "cout", "nic"],
+        correct: 2
     },
     {
         id: 73,
         content: "kompilator konsolowy to:",
         answers: ["c++", "gcc", "g++", "powershel"],
-        correct: 1
+        correct: 2
     },
 ]

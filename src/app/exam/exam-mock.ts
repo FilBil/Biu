@@ -13,17 +13,17 @@ export const EXAMS: Exam[] = [
     },
     {
         id: 3,
-        title: "Pączkowanie",
+        title: "Dietetyka",
         questions: [31, 32, 33]
     },
     {
         id: 4,
-        title: "Calvaria",
+        title: "Ekonomia",
         questions: [46, 47, 48]
     },
     {
         id: 5,
-        title: "Historia Muzyki",
+        title: "Historia",
         questions: [61, 62, 63]
     },
     {
