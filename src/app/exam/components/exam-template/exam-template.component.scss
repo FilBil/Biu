@@ -1,0 +1,27 @@
+@import "../../../style/colors.scss";
+
+.exam-template {
+    margin: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 1.7em;
+        text-decoration: underline;
+        text-decoration-color: $bg;
+    }
+}
+
+.exam-header {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+
+    h2 {
+        font-size: 3em;
+    }    
+}

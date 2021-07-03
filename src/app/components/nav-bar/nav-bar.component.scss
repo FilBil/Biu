@@ -1,0 +1,17 @@
+@import "../../style/colors.scss";
+
+.navigation-bar {
+    background: $bg;
+    color: $color_white;
+}
+
+.navigation-list {
+    padding: 3% 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    &__item {
+       font-size: 1.4em; 
+    }
+}

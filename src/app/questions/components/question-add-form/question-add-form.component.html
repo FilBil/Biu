@@ -1,0 +1,42 @@
+<form [formGroup]="questionAddForm" (ngSubmit)="addQuestion()">
+  <label for="exam">Wybierz Egzamin</label>
+  <select name="exam" id="exam" formControlName="examId">
+    <option *ngFor="let exam of exams" [value]="exam.id">
+      {{ exam.title }}
+    </option>
+  </select>
+
+  <label for="content">Napisz Pytanie</label>
+  <textarea
+    name="content"
+    id="content"
+    cols="30"
+    rows="10"
+    formControlName="content"
+  ></textarea>
+
+  <div formArrayName="answers" class="answers">
+    <header>
+      <h2>Odpowiedzi:</h2>
+      <button
+        type="button"
+        (click)="addAnswer()"
+        [disabled]="addAnswerCustomValidation()"
+      >
+        Dodaj Odpowiedź
+      </button>
+    </header>
+
+    <div *ngFor="let answer of answers.controls; let i = index">
+      <label for="answer-{{ i }}">{{ i + 1 }}</label>
+      <input type="text" id="answer-{{ i }}" [formControlName]="i" />
+    </div>
+  </div>
+
+  <label for="correct">Wybierz poprawną odpowiedź:</label>
+  <select name="correct" id="correct" formControlName="correct">
+    <option *ngFor="let answer of answers.controls; let i=index" [value]="i">{{ i + 1 }}</option>
+  </select>
+
+  <button type="submit" [disabled]="!questionAddForm.valid">Dodaj</button>
+</form>

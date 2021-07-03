@@ -1,0 +1,27 @@
+@import "../../../style/colors.scss";
+
+form {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    align-items: center;
+
+    button {
+        margin: .3rem;
+        padding: .2rem;
+        font-size: 1.3rem;
+    }
+}
+
+.answers {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    header {
+        margin-bottom: 3%;
+    }
+}

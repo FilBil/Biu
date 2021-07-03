@@ -1,0 +1,5 @@
+<div class="exam-question" *ngIf="question$ | async as question">
+    <div *ngFor="let questionProps of question">
+        <span>{{questionProps.content}}</span>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="question-list">
+  <a [routerLink]="['/questions/add']" routerLinkActive="router-link-active">
+    Dodaj Pytanie
+  </a>
+  <ul *ngIf="questions$ | async as questions">
+    <li *ngFor="let question of questions">{{ question.content }}</li>
+  </ul>
+</div>

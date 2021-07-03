@@ -1,0 +1,51 @@
+<div *ngIf="exam$ | async as exam">
+  <div *ngIf="!isChecked; else resultBlock" class="exam-write">
+    <article *ngFor="let examProps of exam">
+      <header>
+        <h2>{{ examProps.title }}</h2>
+      </header>
+
+      <!-- I know is not good but i hadn't time and it works! -->
+      <div
+        *ngFor="let question of examProps.questions; let questionIndex = index"
+      >
+        <div *ngIf="getQuestion(question) | async as questionData">
+          <div *ngFor="let questionProps of questionData">
+            <!-- Question block -->
+            <h3>{{ questionProps.content }}</h3>
+
+            <ul
+              class="answer-block"
+              *ngFor="
+                let questionAnswers of questionProps.answers;
+                let i = index
+              "
+            >
+              <li 
+                class="q-answer"  
+                (click)="getUserAnswers(questionIndex, i)"
+                [ngStyle]="{
+                  'background': userAnswers[questionIndex] == i ? '#2c4d62' : 'inherit',
+                  'color': userAnswers[questionIndex] == i ? '#afbcc4' : 'inherit'
+                }"
+                >
+                {{ questionAnswers }}
+              </li>
+            </ul>
+
+            {{ getCorrectAnswers(questionIndex, questionProps.correct) }}
+          </div>
+        </div>
+      </div>
+
+      <button (click)="checkTheExam()">Sprawdź</button>
+    </article>
+  </div>
+
+  <ng-template #resultBlock>
+    <app-exam-write-result
+      [userPoints]="userPoints"
+      [maxPoints]="maxPoints"
+    ></app-exam-write-result>
+  </ng-template>
+</div>

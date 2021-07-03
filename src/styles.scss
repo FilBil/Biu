@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+@import "./app/style/colors.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Bona Nova', serif;
+    color: $color_black;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    button {
+        font-family: 'Bona Nova', serif;
+        background: $bg;
+        color: $color_white;
+        border: none;
+    }
+}

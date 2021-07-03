@@ -1,0 +1,16 @@
+<div class="exam-template" *ngIf="exam$ | async as exam">
+    <article *ngFor="let examProps of exam">
+        <header class="exam-header">
+            <h2>
+                {{examProps.title}}
+            </h2>
+            <a [routerLink]="['/exam/write', examId]" routerLinkActive="router-link-active" >Napisz Ten Egzamin</a>
+        </header>
+        <p>Pytania</p>
+        <ul>
+            <li *ngFor="let question of examProps.questions">
+                <app-exam-question [questionId]="question"></app-exam-question>
+            </li>
+        </ul>
+    </article>
+</div>
